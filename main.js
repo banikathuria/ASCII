@@ -27,31 +27,23 @@ function my_keydown(e)
 	keyPressed = e.keyCode;
 	console.log(keyPressed);
 	
-		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90))
+		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90)){
 	    aplhabetkey();
+		}
+	
+	else if(keyPressed >=48 && keyPressed<=57){
+    numberkey();
+	}
+
+else if(keyPressed >=37 && keyPressed<=40){
+	arrowkey();
+}
+else if(keyPressed >=17 && keyPressed<=27){
+	specialkey();}
 	else{
 		otherkey();
-		
 	}
-	
-	if(keyPressed >=48 && keyPressed<=57)
-	numberkey();
-else{
-	otherkey();
-	
-}
-if(keyPressed >=37 && keyPressed<=40)
-	arrowkey();
-else{
-	otherkey();
-	
-}
-if(keyPressed >=17 && keyPressed<=27)
-	numberkey();
-else{
-	otherkey();
-	
-}
+
 
 }
 
